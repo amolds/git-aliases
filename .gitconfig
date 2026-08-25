@@ -1,0 +1,36 @@
+[user]
+	name = <YourName>
+	email = <YourEmail>
+
+[core]
+	editor = code --wait
+
+[pull]
+	rebase = true
+
+[init]
+	defaultBranch = main
+
+[push]
+	autoSetupRemote = true
+
+[alias]
+	st = status
+	br = branch
+	co = checkout
+	ci = commit
+	cm = commit -m
+	oneline = log --oneline --decorate --graph --all
+	last = log -1 HEAD --stat
+	untrack = restore --staged
+	unstage = restore --staged
+	who = shortlog -sn
+	l = log --oneline --decorate --graph --all --max-count=20
+	d = diff
+	dc = diff --cached
+	fixup = commit --fixup
+	amend = commit --amend --no-edit
+	prune = fetch --prune
+	root = rev-parse --show-toplevel
+	sw = switch
+	ss = status -sb
